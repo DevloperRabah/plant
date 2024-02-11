@@ -1,0 +1,124 @@
+body {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+  position: relative;
+}
+
+/* Header Styles */
+#header {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Content Styles */
+#content {
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Color Changer Styles */
+#colorChanger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Eye Toggle Styles */
+.eyeToggle {
+  width: 30px;
+  height: 30px;
+  border: 30px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  background-color: #888;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Eye Toggle Styles */
+.eyeToggle {
+  width: 40px; /* Increase the width */
+  height: 40px; /* Increase the height */
+  border: 2px solid white; /* Add a border */
+  border-radius: 50%; /* Make it round */
+}
+
+.toggle-label:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #ffffff;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+  left: 28px;
+  background-image: url(moon.png); /* Replace with your eye icon for dark mode */
+}
+
+.toggle-label:before {
+  background-image: url(sun.png); /* Replace with your eye icon for light mode */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Body Styles for White Background */
+body.white {
+  background-color: white;
+  color: black;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-left: 20px;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+}
