@@ -51,7 +51,7 @@ body {
 .eyeToggle {
   width: 40px; /* Increase the width */
   height: 40px; /* Increase the height */
-  border: 2px ; /* Add a border */
+  border: 2px solid white; /* Add a border */
   border-radius: 50%; /* Make it round */
 }
 
